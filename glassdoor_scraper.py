@@ -46,7 +46,8 @@ def parse(keyword, place):
 			'sc.keyword': keyword,
 			'locT': 'C',
 			'locId': place_id,
-			'jobType': ''
+			'jobType': '', 
+			'value': '0-1 Years'
 		}
 
 		job_listings = []
