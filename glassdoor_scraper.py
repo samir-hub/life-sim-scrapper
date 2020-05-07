@@ -57,9 +57,7 @@ def parse(keyword, place):
 			base_url = "https://www.glassdoor.com"
 			parser.make_links_absolute(base_url)
 
-			XPATH_SALARY = './/span[@class="green small"]/text()'
-
-			raw_salary = parser.xpath('//h1/text()')
+			raw_salary = parser.xpath('//*[@id="OccMedianChart"]/div[1]/div[2]/span[1]/text()')
 
 			jobs = {
 				"Salary": raw_salary
